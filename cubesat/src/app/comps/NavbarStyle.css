@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Comfortaa);
+
+.navbar{
+    background: black;
+    height: 130px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnbox {
+    display: flex;
+    margin: 40px 40px;
+    /* background-color: red; */
+}
+
+#cubesat-logo {
+    padding-top: 3px;
+    padding-left: 60px;
+}
+
+button {
+    background: transparent;
+    position: relative;
+    border: none;
+    outline: none;
+    margin-left: 1em;
+    margin-right: 1em;
+    cursor: pointer;
+    padding: 14px 22px;
+    /* align-items: center; */
+    font-size: 18px;
+    font-family: Comfortaa;
+    color: white
+}
+
+button:focus {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Comfortaa);
+
+.navbar{
+    background: black;
+    height: 130px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnbox {
+    display: flex;
+    margin: 40px 40px;
+    /* background-color: red; */
+}
+
+#cubesat-logo {
+    padding-top: 3px;
+    padding-left: 60px;
+}
+
+button {
+    background: transparent;
+    position: relative;
+    border: none;
+    outline: none;
+    margin-left: 1em;
+    margin-right: 1em;
+    cursor: pointer;
+    padding: 14px 22px;
+    /* align-items: center; */
+    font-size: 18px;
+    font-family: Comfortaa;
+    color: white
+}
+
+button:hover{
+    text-decoration: none;
+}
+
+button:hover::after {
+    text-decoration: none;
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    height: 2px;
+    background-color: white;
+}
