@@ -19,26 +19,6 @@
     padding-left: 60px;
 }
 
-button {
-    background: transparent;
-    position: relative;
-    border: none;
-    outline: none;
-    margin-left: 1em;
-    margin-right: 1em;
-    cursor: pointer;
-    padding: 14px 22px;
-    /* align-items: center; */
-    font-size: 18px;
-    font-family: Comfortaa;
-    color: white
-}
-
-button:focus {
-    text-decoration: underline;
-    font-weight: bold;
-}
-
 @import url(https://fonts.googleapis.com/css?family=Comfortaa);
 
 .navbar{
@@ -60,7 +40,7 @@ button:focus {
     padding-left: 60px;
 }
 
-button {
+.navbtn {
     background: transparent;
     position: relative;
     border: none;
@@ -75,11 +55,7 @@ button {
     color: white
 }
 
-button:hover{
-    text-decoration: none;
-}
-
-button:hover::after {
+.navbtn:hover::after {
     text-decoration: none;
     content: '';
     position: absolute;

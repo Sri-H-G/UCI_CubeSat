@@ -16,13 +16,13 @@ const Navbar = () => {
             </div>
             <div className = "btnbox">
                 <a href='/home'>
-                    <button>Home</button>
+                    <button className = "navbtn">Home</button>
                 </a>
                 <a href='/aboutus'>
-                    <button>About Us</button>
+                    <button className = "navbtn">About Us</button>
                 </a>
                 <a href='/contact'>
-                    <button>Contact</button>
+                    <button className = "navbtn">Contact</button>
                 </a>
             </div>
         </div>

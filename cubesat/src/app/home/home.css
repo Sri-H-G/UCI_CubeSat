@@ -1,4 +1,5 @@
-.top-fragment{
+/* Welcome message box style */
+.welcome-fragment{
     background-image: url(/images/cubesatWebsiteBG.jpg);
     background-size: 100%;
     background-position: 0% 20%;
@@ -7,18 +8,147 @@
     height: 550px;
 }
 
-.description h1{
+.welcome-description {
+    margin-left: 60px;
+    width: 60%;
+}
+
+.welcome-description p{
+    width: 430px;
+}
+
+.welcome-description h1{
     margin: 0;
     padding-top: 120px;
     font-size: 90px;
     font-family: Comfortaa;
 }
 
-.description {
-    margin-left: 60px;
-    width: 60%;
+/* CubeSat statistic division style */
+
+.stat-fragment{
+    height: 350px;
+    display: flex;
+    justify-content: center;
+}
+ 
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.description p{
-    width: 430px;
+.card h2{
+    margin: 5px;
+}
+
+.card h1{
+    margin: 0
+}
+
+#mid-card h1{
+    font-size: 80px;
+}
+
+#left-card h1{
+    font-size: 50px;
+}
+
+#right-card h1{
+    font-size: 50px;
+}
+
+#left-card {
+    height: 100%;
+    width: 33%;
+}
+
+#mid-card{
+    height: 100%;
+    width: 34%;
+}
+
+#right-card{
+    height: 100%;
+    width: 33%;
+}
+
+/* Who we are style */
+
+.about-fragment{
+    background-color: black;
+    display: flex;
+    height: 700px;
+    justify-content: center;
+}
+
+#WWA-image-box{
+    width: 50%;
+}
+
+#WWA-description-box{
+    width: 50%;
+}
+
+#WWA-description{
+    width: 80%
+}
+
+#WWA-description-box h1{
+    font-size: 50px;
+}
+
+#WWA-description a{
+    display: inline-block;
+    margin-top: 20px;
+    text-align: left;
+}
+
+#WWA-description button{
+    background-color: purple;
+    color: white;
+    padding: 10px 20px;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+}
+
+/* Sponsors style */
+
+.sponsors-fragment{
+    height: 700px;
+    width: 100%;
+    background-color: black;
+    /* text-align: center;
+    display: flex;
+    flex-direction: column; */
+}
+
+#sponsors-header{
+    margin-bottom: 60px;
+    font-size: 50px;
+}
+
+.sponsor-row{
+    height: 200px; /* Change it to a set amount of pixel height */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sponsor-row .card{
+    width: 50%;
+}
+
+
+/* Stay Connected style */
+
+.connect-fragment{
+    height: 400px;
+    width: 100%
+}
+
+.connect-fragment h1{
+    margin: 0;
 }
