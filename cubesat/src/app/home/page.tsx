@@ -3,6 +3,7 @@ import "../home/home.css"
 import Image from 'next/image';
 import Head from 'next/head';
 
+
 export default function Home(){
     return(
         <>
@@ -10,11 +11,11 @@ export default function Home(){
                 <link rel="preconnect" href="https://fonts.googleapis.com"/>
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin = "anonymous"/>
 
-                <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"/>
+                <link href="https://fonts.googleapis.com/css2?family=Kufam:ital@0;1&display=swap" rel="stylesheet"/>
 
                 <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&family=Kufam:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"/>
+                <title>CubeSat - Home</title>
             </head>
-            <title>CubeSat - Home</title>
             <Navbar/>
             <div className = "welcome-fragment">
                 <div className = "welcome-description">
@@ -26,6 +27,9 @@ export default function Home(){
                         technology with the ASPIN lab at UCI, we aim to set a standard for
                         future student-led space mission and research at UCI.
                     </p>
+                    <a href='/aboutus'>
+                        <button>Read More</button>
+                    </a>
                 </div>
             </div>
             <div className = "stat-fragment">
