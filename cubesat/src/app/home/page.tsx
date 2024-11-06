@@ -1,21 +1,16 @@
 import Navbar from "../comps/Navbar";
+import Footer from "../comps/Footer";
 import "../home/home.css"
+import "../globals.css"
 import Image from 'next/image';
 import Head from 'next/head';
-
 
 export default function Home(){
     return(
         <>
-            <head>
-                <link rel="preconnect" href="https://fonts.googleapis.com"/>
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin = "anonymous"/>
-
-                <link href="https://fonts.googleapis.com/css2?family=Kufam:ital@0;1&display=swap" rel="stylesheet"/>
-
-                <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&family=Kufam:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"/>
+            <Head>
                 <title>CubeSat - Home</title>
-            </head>
+            </Head>
             <Navbar/>
             <div className = "welcome-fragment">
                 <div className = "welcome-description">
@@ -106,9 +101,7 @@ export default function Home(){
                     </div>
                 </div>
             </div>
-            <div className = "connect-fragment">
-                <h1>Stay Connected</h1>
-            </div>
+            <Footer/>
         </>
     )
 }

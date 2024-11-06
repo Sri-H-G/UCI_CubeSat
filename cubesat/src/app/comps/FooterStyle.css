@@ -1,0 +1,29 @@
+#connected-header{
+    margin-left: 10%;
+    font-size: 50px;
+    font-family: 'Konkhmer Sleokchher';
+    font-weight: 400;
+}
+
+p{
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.socials-box{
+    display: flex;
+    justify-content: center;
+}
+
+.icons-box{
+    width: 40%;
+    margin-bottom: 30px;
+}
+
+.contact-info{
+    width: 40%;
+    text-align: right;
+    margin-bottom: 30px;
+}
