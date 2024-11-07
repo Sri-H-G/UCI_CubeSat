@@ -27,3 +27,52 @@ p{
     text-align: right;
     margin-bottom: 30px;
 }
+
+#instagram-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#instagram-logo{
+    color: white;
+    font-size: 40px;
+    margin-right: 15px;
+}
+
+#linkedin-box{
+    display: flex;
+    align-items: center;
+}
+
+#linkedin-logo{
+    color: #0077B5;
+    font-size: 40px;
+    margin-right: 15px;
+}
+
+#joinus-arrow{
+    color: #0077B5;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+}
+
+#joinus-box{
+    text-align: right;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+#joinus-box p{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}

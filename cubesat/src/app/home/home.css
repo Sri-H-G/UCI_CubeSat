@@ -1,12 +1,30 @@
 /* Welcome message box style */
 .welcome-fragment{
     background-image: url(/images/cubesatWebsiteBG.png);
-    background-size: 110%;
-    background-position: 0% 0%;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 600px;
+    /* height: 560px; */
+    height: 700px;
+    position: relative;
 }
+
+.welcome-fragment::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.40);
+    z-index: 1;
+ }
+ 
+.welcome-fragment > * {
+    position: relative;
+    z-index: 2;
+ }
 
 .welcome-description {
     margin-left: 10%;
@@ -76,9 +94,33 @@
 
 .stat-fragment{
     height: 350px;
+    background-color: blue;
     display: flex;
     justify-content: center;
     font-family: 'Kufam', sans-serif;
+    /* background-color: blue; */
+    background-image: url(/images/stats_BG.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+}
+
+.stat-fragment::before{
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0, 0, 0, 0.85);
+   z-index: 1;
+}
+
+.stat-fragment > * {
+    position: relative;
+    z-index: 2;
 }
  
 .card{
