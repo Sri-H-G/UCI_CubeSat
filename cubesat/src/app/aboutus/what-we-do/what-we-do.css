@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: 'Comfortaa', sans-serif;
+  background-color: #0a0a0a; /* Dark gray background */
+}
+
+.what-we-do-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 40px 10px; /* Reduced margin with the walls */
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1200px; /* Limit the width for better layout */
+  margin-bottom: 20px; /* Margin between rows */
+  background-color: #1a1a1a; /* Darker gray for text boxes */
+  overflow: hidden;
+  border-radius: 8px; /* Rounded corners */
+}
+
+.section.reverse {
+  flex-direction: row-reverse; /* Alternate order */
+}
+
+.image-box {
+  width: 50%; /* Half width for the image */
+  background-color: #0a0a0a; /* Placeholder color */
+}
+
+.text-box {
+  width: 50%; /* Half width for the text */
+  padding: 50px; /* Increased padding for more internal margin */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  text-align: left; /* Align text and title to center */
+  box-sizing: border-box; /* Include padding in box model */
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 15px; /* Slightly larger space below the title */
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6; /* Improve readability */
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    flex-direction: column; /* Stack vertically on small screens */
+  }
+
+  .section.reverse {
+    flex-direction: column; /* Ensure reverse works vertically */
+  }
+
+  .image-box,
+  .text-box {
+    width: 100%; /* Full width for smaller screens */
+  }
+}
