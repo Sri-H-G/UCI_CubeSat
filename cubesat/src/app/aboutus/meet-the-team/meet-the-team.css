@@ -1,0 +1,179 @@
+.our-mission-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Limit content width */
+    margin: 60px auto; /* Space around the section */
+    padding: 0 20px; /* Add horizontal padding for responsiveness */
+  }
+  
+  .mission-text {
+    width: 60%; /* Take 60% of the width for text */
+    color: white;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+  
+  .mission-text h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .mission-text h1::after {
+    content: "";
+    flex-grow: 1;
+    height: 2px;
+    background-color: white;
+    margin-left: 20px;
+  }
+  
+  .mission-image {
+    width: 40%; /* Take 40% of the width for the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a; /* Placeholder background */
+    aspect-ratio: 1; /* Square placeholder for the image */
+  }
+  
+  .mission-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .our-mission-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .mission-text {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .mission-image {
+      width: 100%;
+    }
+  
+    .mission-text h1::after {
+      display: none;
+    }
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Comfortaa', sans-serif;
+    background-color: #0a0a0a; /* Dark gray background */
+    color: white;
+  }
+  
+  .meet-the-team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 60px 20px;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .header h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .header h1 .highlight {
+    color: #8a2be2; /* Purple highlight */
+  }
+  
+  .header p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+  
+  .roles-navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 30px 0;
+    font-size: 16px;
+  }
+  
+  .roles-navigation a {
+    color: #c0c0c0; /* Light gray links */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .roles-navigation a:hover,
+  .roles-navigation a.active {
+    color: white; /* Highlight active/hovered link */
+  }
+  
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Flexible grid */
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px; /* Centered content area */
+  }
+  
+  .team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .member-photo {
+    width: 120px;
+    height: 120px;
+    background-color: #606060; /* Placeholder color for the image */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  
+  .member-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures proper scaling */
+  }
+  
+  .member-info {
+    font-size: 14px;
+  }
+  
+  .member-info h3 {
+    margin: 5px 0;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .member-info a {
+    color: #8a2be2; /* Purple for links */
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .member-info a:hover {
+    text-decoration: underline;
+  }
+  
