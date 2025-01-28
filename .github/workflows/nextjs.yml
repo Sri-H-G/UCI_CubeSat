@@ -44,6 +44,7 @@ jobs:
           else
             echo "Unable to determine package manager. Ensure either yarn.lock or package.json is present."
             exit 1
+          fi
 
       # Step 3: Setup Node.js
       - name: Setup Node
@@ -74,7 +75,8 @@ jobs:
 
       # Step 7: Build the Next.js site
       - name: Build with Next.js
-        run: ${{ steps.detect-package-manager.outputs.runner }} next build
+        run: |
+          ${{ steps.detect-package-manager.outputs.runner }} next build
 
       # Step 8: Upload the build artifact
       - name: Upload artifact
@@ -94,3 +96,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
