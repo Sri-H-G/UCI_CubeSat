@@ -1,23 +1,30 @@
 import Navbar from "../comps/Navbar";
+import Footer from "../comps/Footer";
 import "../home/home.css"
+import "../globals.css"
 import Image from 'next/image';
+import Head from 'next/head';
 
 export default function Home(){
     return(
         <>
-            <title>CubeSat - Home</title>
+            <Head>
+                <title>CubeSat - Home</title>
+            </Head>
             <Navbar/>
             <div className = "welcome-fragment">
                 <div className = "welcome-description">
                     <h1>UCI CUBESAT</h1>
-                    <h2>Pioneering Next-Gen Thermal Control Technology</h2>
-                    <h2>For Space Exploration</h2>
+                    <h2>Pioneering Next-Gen Thermal Control Technology For Space Exploration.</h2>
                     <p>
                         Our mission is to design, test, and launch a modular nanosattelite
                         into low-Earth orbit. By working with cutting-edge thermal control
                         technology with the ASPIN lab at UCI, we aim to set a standard for
                         future student-led space mission and research at UCI.
                     </p>
+                    <a href='/aboutus'>
+                        <button>Read More</button>
+                    </a>
                 </div>
             </div>
             <div className = "stat-fragment">
@@ -35,12 +42,12 @@ export default function Home(){
                 </div>
             </div>
             <div className = "about-fragment">
-                <div id = "WWA-image-box" className = "card">
+                <div id = "WWA-image-box">
                     <h1>Image goes here</h1>
                 </div>
-                <div id = "WWA-description-box" className = "card">
-                 <h1>Who We Are</h1>
+                <div id = "WWA-description-box">
                     <div id = "WWA-description">
+                        <h1>Who We Are</h1>
                         <p>We are an interdiscipinary team of undergraduate studetns at UCI dedicated to 
                             building and launching a 2U nanosatellite. The satellite operates with six 
                             main engineering subsystems: Avionics, Communications, Structures, Power, 
@@ -94,9 +101,7 @@ export default function Home(){
                     </div>
                 </div>
             </div>
-            <div className = "connect-fragment">
-                <h1>Stay Connected</h1>
-            </div>
+            <Footer/>
         </>
     )
 }
