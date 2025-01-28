@@ -2,7 +2,7 @@ name: Deploy Next.js to GitHub Pages
 
 on:
   push:
-    branches: ["main"] # Deploys on every push to the `main` branch
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -21,17 +21,21 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18 
+          node-version: 18
+          cache: npm
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          cd cubesat
+          npm install
 
-      - name: Build and export
-        run: npm run build
+      - name: Build and export Next.js site
+        run: |
+          cd cubesat
+          npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out
-
+          publish_dir: ./cubesat/out
