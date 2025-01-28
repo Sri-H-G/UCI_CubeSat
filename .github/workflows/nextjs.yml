@@ -23,19 +23,18 @@ jobs:
         with:
           node-version: 18
           cache: npm
+          cache-dependency-path: cubesat/package-lock.json # Cache dependencies from correct folder
 
       - name: Install dependencies
-        run: |
-          cd cubesat
-          npm install
+        run: npm install
+        working-directory: cubesat # Run inside the cubesat folder
 
       - name: Build and export Next.js site
-        run: |
-          cd cubesat
-          npm run build
+        run: npm run build
+        working-directory: cubesat # Run inside the cubesat folder
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./cubesat/out
+          publish_dir: cubesat/out # Deploy from the correct folder
