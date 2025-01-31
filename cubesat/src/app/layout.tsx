@@ -1,7 +1,9 @@
 import { ReactNode } from 'react';
+import './globals.css';
 
 export const metadata = {
   title: 'CubeSat - Home',
+  description: 'UCI CubeSat Project Website',
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
