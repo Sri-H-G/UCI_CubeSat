@@ -14,10 +14,6 @@
     /* background-color: red; */
 }
 
-#cubesat-logo {
-    padding-top: 3px;
-    padding-left: 60px;
-}
 
 @import url(https://fonts.googleapis.com/css?family=Comfortaa);
 
@@ -64,4 +60,21 @@
     bottom: -2px;
     height: 2px;
     background-color: white;
+}
+
+/* mobile responsive navbar */
+
+@media (max-width: 600px) {
+    .navbar{
+        background: black;
+        height: 120px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #cubesat-logo {
+        padding-top: 0px;
+        padding-left: 10px;
+    }
 }
